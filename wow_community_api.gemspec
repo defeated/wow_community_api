@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["eddie cianci"]
   s.email       = ["defeated2k4@gmail.com"]
   s.homepage    = "http://github.com/defeated/wow_community_api"
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{World of Warcraft Community Platform API}
+  s.description = %q{a Ruby library for Blizzard's World of Warcraft Community Platform API}
 
   s.rubyforge_project = "wow_community_api"
 
@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "httparty"
+
   s.add_development_dependency "rspec"
 end

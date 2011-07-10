@@ -1,6 +1,4 @@
-require 'wow_community_api'
-
-include WowCommunityApi
+require 'spec_helper'
 
 describe Realm do
   describe "#status" do
