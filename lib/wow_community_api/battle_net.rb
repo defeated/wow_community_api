@@ -1,5 +1,3 @@
-require 'httparty'
-
 module WowCommunityApi
   class BattleNet
     include HTTParty
