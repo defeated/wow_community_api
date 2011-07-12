@@ -2,6 +2,15 @@
 
 A Ruby library for Blizzard's World of Warcraft Community Platform API. <http://blizzard.github.com/api-wow-docs>
 
+## Installation
+
+ `gem install wow_community_api` or if you're using Bundler (of course you're using Bundler), just add
+ `gem "wow_community_api"` to your `Gemfile`, then run the `bundle` command!
+
+## Usage
+
+TODO
+
 ## Contributing to the WoW Community Platform API Ruby library
  
   * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
