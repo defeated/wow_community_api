@@ -21,6 +21,6 @@ TODO
   * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
   * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-## Copyright
+## License
 
-Copyright (c) 2011 eddie cianci. Released under the MIT license. See LICENSE for further details.
+Copyright (c) 2011 eddie cianci [and contributors](http://github.com/defeated/wow_community_api/contributors). Released under the MIT license. See [LICENSE](https://github.com/defeated/wow_community_api/blob/master/LICENSE) for further details.
