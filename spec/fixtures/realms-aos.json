@@ -1,0 +1,12 @@
+{
+  "realms":[
+    {
+      "type":"pvp",
+      "queue":false,
+      "status":true,
+      "population":"low",
+      "name":"Altar of Storms",
+      "slug":"altar-of-storms"
+    }
+  ]
+}
