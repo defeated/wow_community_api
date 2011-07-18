@@ -6,6 +6,10 @@ module WowCommunityApi
       self.base_uri "#{name}.battle.net/api/wow"
     end
     base_uri region(Regions::US)
+    
+    def self.get(path, options = {})
+      super(URI.encode(path), options)
+    end
 
   end
 end
