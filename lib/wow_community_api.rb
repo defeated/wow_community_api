@@ -1,6 +1,5 @@
 require 'httparty'
 require 'ostruct'
-require 'webmock/rspec'
 
 require "wow_community_api/version"
 require "wow_community_api/regions"
