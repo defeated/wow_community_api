@@ -1,5 +1,6 @@
 require 'httparty'
 require 'ostruct'
+require 'uri'
 
 require "wow_community_api/version"
 require "wow_community_api/regions"
