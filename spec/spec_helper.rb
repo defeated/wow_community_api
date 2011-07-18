@@ -1,4 +1,5 @@
 require 'wow_community_api'
+require 'webmock/rspec'
 
 include WowCommunityApi
 
