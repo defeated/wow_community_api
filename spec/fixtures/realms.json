@@ -7,6 +7,14 @@
       "population":"medium",
       "name":"Medivh",
       "slug":"medivh"
+    },
+    {
+      "type":"pve",
+      "queue":false,
+      "status":true,
+      "population":"high",
+      "name":"Lightbringer",
+      "slug":"lightbringer"
     }
   ]
 }

@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "httparty"
+  s.add_dependency "hash-to-ostruct"
 
   s.add_development_dependency "rspec"
   s.add_development_dependency "webmock"
