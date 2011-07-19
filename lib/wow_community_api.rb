@@ -1,5 +1,5 @@
 require 'httparty'
-require 'ostruct'
+require 'hash-to-ostruct'
 require 'uri'
 
 require "wow_community_api/version"
