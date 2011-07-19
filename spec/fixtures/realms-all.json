@@ -1,0 +1,28 @@
+{
+  "realms":[
+    {
+      "type":"pve",
+      "queue":false,
+      "status":true,
+      "population":"medium",
+      "name":"Medivh",
+      "slug":"medivh"
+    },
+    {
+      "type":"pve",
+      "queue":false,
+      "status":true,
+      "population":"high",
+      "name":"Lightbringer",
+      "slug":"lightbringer"
+    },
+    {
+      "type":"pve",
+      "queue":false,
+      "status":true,
+      "population":"high",
+      "name":"Aerie Peak",
+      "slug":"aerie-peak"
+    }
+  ]
+}
