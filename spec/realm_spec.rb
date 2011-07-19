@@ -24,5 +24,15 @@ describe Realm do
       realms[0].name.should == "Medivh"
       realms[1].name.should == "Lightbringer"
     end
+    
+    it "gets all realms" do
+      stub_json 'http://us.battle.net/api/wow/realm/status', 'realms-all.json'
+      
+      realms = Realm.find_all
+      realms.size.should == 3
+      realms[0].name.should == "Medivh"
+      realms[1].name.should == "Lightbringer"
+      realms[2].name.should == "Aerie Peak"
+    end
   end
 end
