@@ -8,7 +8,7 @@ module WowCommunityApi
     base_uri region(Regions::US)
     
     def self.get(path, options = {})
-      super(URI.encode(path), options)
+      super(URI.encode(path), options).to_ostruct
     end
 
   end
