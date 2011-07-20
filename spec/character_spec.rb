@@ -16,5 +16,22 @@ describe Character do
       character.realm.should == 'Altar of Storms'
       character.name.should == 'Johndoe'
     end
+    
+    it 'gets a character with optional field guild' do
+      stub_json 'http://us.battle.net/api/wow/character/uther/malkyth?fields=guild', 'character-guild.json'
+
+      character = Character.find_by_realm_and_name('uther', 'malkyth', :guild)
+      character.guild.name.should == "Havok"
+      character.guild.emblem.icon.should == 106
+    end
+    
+    it 'gets a character with multiple optional fields' do
+      stub_json 'http://us.battle.net/api/wow/character/uther/malkyth?fields=guild,titles', 'character-all-fields.json'
+
+      character = Character.find_by_realm_and_name('uther', 'malkyth', :guild, :titles)
+      character.guild.name.should == "Havok"
+      character.titles.size.should == 3
+      character.titles[0].name.should == "Centurion %s"
+    end
   end
 end

@@ -1,0 +1,25 @@
+{
+  "lastModified":1311111102000,
+  "name":"Malkyth",
+  "realm":"Uther",
+  "class":9,
+  "race":5,
+  "gender":0,
+  "level":85,
+  "achievementPoints":11030,
+  "thumbnail":"uther/243/6004211-avatar.jpg",
+  "guild":{
+    "name":"Havok",
+    "realm":"Uther",
+    "level":25,
+    "members":525,
+    "achievementPoints":1425,
+    "emblem":{
+      "icon":106,
+      "iconColor":"ffffff00",
+      "border":0,
+      "borderColor":"ffffffff",
+      "backgroundColor":"ffffff91"
+    }
+  }
+}
