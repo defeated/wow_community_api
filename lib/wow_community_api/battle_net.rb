@@ -11,7 +11,8 @@ module WowCommunityApi
     base_uri region(DEFAULT_REGION)
     
     def self.get(path, options = {})
-      super(URI.encode(path), options).to_ostruct
+      results = super(URI.encode(path), options)
+      results.to_ostruct if results.response.code == "200"
     end
 
   end
