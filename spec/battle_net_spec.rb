@@ -9,6 +9,7 @@ describe BattleNet do
       BattleNet.region(Regions::EU).should == "http://eu.battle.net/api/wow"
       BattleNet.region(Regions::KR).should == "http://kr.battle.net/api/wow"
       BattleNet.region(Regions::TW).should == "http://tw.battle.net/api/wow"
+      BattleNet.region(Regions::CN).should == "http://www.battlenet.com.cn/api/wow"
     end
     
     it "defaults to US region" do

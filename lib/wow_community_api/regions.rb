@@ -1,8 +1,9 @@
 module WowCommunityApi
   class Regions
-    US = "us"
-    EU = "eu"
-    KR = "kr"
-    TW = "tw"
+    US = "us.battle.net"
+    EU = "eu.battle.net"
+    KR = "kr.battle.net"
+    TW = "tw.battle.net"
+    CN = "www.battlenet.com.cn"
   end
 end
