@@ -1,4 +1,7 @@
-# WoW Community Platform API Ruby library ![Travis Continuous Integration Build Status badge](http://travis-ci.org/defeated/wow_community_api.png)
+# WoW Community Platform API Ruby library [![Travis Build Status][2]][1]
+
+  [1]: http://travis-ci.org/defeated/wow_community_api
+  [2]: http://travis-ci.org/defeated/wow_community_api.png
 
 A Ruby library for Blizzard's World of Warcraft Community Platform API. <http://blizzard.github.com/api-wow-docs>
 
