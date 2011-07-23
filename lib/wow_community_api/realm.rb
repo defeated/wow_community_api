@@ -2,7 +2,7 @@ module WowCommunityApi
   class Realm < BattleNet
     def self.find_by_name(*name)
       names = { :realms => name.join(",") } unless name.empty?
-      results = get("/realm/status", :query => names)
+      results = get("/realm/status", names)
       (name.size == 1) ? results.realms.first : results.realms
     end
 

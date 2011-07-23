@@ -6,19 +6,19 @@ describe BattleNet do
     
     it "sets the base uri to a region" do
       BattleNet.region = Regions::US
-      BattleNet.region.should == "http://us.battle.net/api/wow"
+      BattleNet.region.should == "us.battle.net"
       
       BattleNet.region = Regions::EU
-      BattleNet.region.should == "http://eu.battle.net/api/wow"
+      BattleNet.region.should == "eu.battle.net"
       
       BattleNet.region = Regions::KR
-      BattleNet.region.should == "http://kr.battle.net/api/wow"
+      BattleNet.region.should == "kr.battle.net"
       
       BattleNet.region = Regions::TW
-      BattleNet.region.should == "http://tw.battle.net/api/wow"
+      BattleNet.region.should == "tw.battle.net"
       
       BattleNet.region = Regions::CN
-      BattleNet.region.should == "http://www.battlenet.com.cn/api/wow"
+      BattleNet.region.should == "www.battlenet.com.cn"
     end
     
     it "defaults to US region" do
@@ -28,9 +28,11 @@ describe BattleNet do
     it "can switch regions" do
       BattleNet.region = Regions::EU
       BattleNet.region.should == Realm.region
+      Realm.region.should == "eu.battle.net"
       
       BattleNet.region = Regions::KR
       BattleNet.region.should == Realm.region
+      Realm.region.should == "kr.battle.net"
     end
     
     it "returns nil for 404 not found error" do
