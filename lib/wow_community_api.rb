@@ -1,3 +1,4 @@
+require 'active_support/core_ext/class'
 require 'httparty'
 require 'hash-to-ostruct'
 require 'uri'
