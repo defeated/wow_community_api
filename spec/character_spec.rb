@@ -33,5 +33,14 @@ describe Character do
       character.titles.size.should == 3
       character.titles[0].name.should == "Centurion %s"
     end
+    
+    it 'gets a character with foreign locale' do
+      BattleNet.locale = Locales::US::ES_MX
+      
+      stub_json 'http://us.battle.net/api/wow/character/uther/malkyth?fields=titles&locale=es_MX', 'character-mexican.json'
+
+      character = Character.find_by_realm_and_name('uther', 'malkyth', :titles)
+      character.titles[0].name.should == "Conquistador %s"
+    end
   end
 end

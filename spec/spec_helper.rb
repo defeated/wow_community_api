@@ -3,6 +3,10 @@ require 'webmock/rspec'
 
 include WowCommunityApi
 
+RSpec.configure do |config|
+  config.after(:each) { BattleNet.reset! }
+end
+
 def stub_json(uri, filename)
   body = open("spec/fixtures/#{filename}")
   stub_request(:get, uri).to_return(:body => body, :headers => { 'Content-Type' => 'application/json' })
