@@ -5,12 +5,16 @@ module WowCommunityApi
     # TODO: make this configurable?
     DEFAULT_REGION = Regions::US
   
-    def self.region(path)
-      self.base_uri "#{path}/api/wow"
+    def self.region
+      @@region
     end
-    base_uri region(DEFAULT_REGION)
+    def self.region=(path)
+      @@region = "http://#{path}/api/wow"
+    end
+    self.region = DEFAULT_REGION
     
     def self.get(path, options = {})
+      base_uri self.region
       results = super(URI.encode(path), options)
       results.parsed_response.to_ostruct if results.response.code == "200"
     end
