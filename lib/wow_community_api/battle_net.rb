@@ -12,7 +12,7 @@ module WowCommunityApi
     
     def self.get(path, options = {})
       results = super(URI.encode(path), options)
-      results.to_ostruct if results.response.code == "200"
+      results.parsed_response.to_ostruct if results.response.code == "200"
     end
 
   end
