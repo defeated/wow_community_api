@@ -13,7 +13,7 @@ module WowCommunityApi
       base_uri "http://#{self.region}/api/wow"
 
       results = super(URI.encode(path), build_query(options))
-      results.parsed_response.to_ostruct if results.response.code == "200"
+      results.parsed_response if results.response.code == "200"
     end
     
     def self.build_query(options)

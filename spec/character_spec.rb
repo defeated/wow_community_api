@@ -42,5 +42,12 @@ describe Character do
       character = Character.find_by_realm_and_name('uther', 'malkyth', :titles)
       character.titles[0].name.should == "Conquistador %s"
     end
+    
+    it 'gets the class of a character' do
+      stub_json "http://us.battle.net/api/wow/character/uther/malkyth", 'character.json'
+
+      character = Character.find_by_realm_and_name("uther", "malkyth")
+      character.class_id.should == 9
+    end
   end
 end
